@@ -56,7 +56,6 @@ from keras.models import Model
 from keras.utils import plot_model
 from keras.callbacks import ModelCheckpoint, TensorBoard
 from keras.initializers import TruncatedNormal
-import pydot
 import os, re
 
 
