@@ -227,6 +227,7 @@ def decode_beamsearch(seq, beam_size):
     return answer_
 def plot_attention(attention, sentence, predicted_sentence):
     zhfont = matplotlib.font_manager.FontProperties(fname='simkai.ttf')
+    plt.switch_backend('agg')
     fig = plt.figure(figsize=(5,5))
     ax = fig.add_subplot(1, 1, 1)
     attention = [x[::-1] for x in attention]
